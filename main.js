@@ -67,8 +67,7 @@ function handleKeyUp(e) {
 window.addEventListener('keydown', handleKeyDown);
 window.addEventListener('keyup', handleKeyUp);
 
-loader.load(
-    './a_liminal_space.glb', // Replace with your actual GLB file path
+loader.load('/a_liminal_space.glb',
     function (gltf) {
         yourMap = gltf.scene;
         scene.add(yourMap);
